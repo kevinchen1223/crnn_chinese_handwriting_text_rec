@@ -45,7 +45,7 @@ in ``test_width.txt``
 
 00001.jpg 符疆葛去卑狂擅改汐堂苯谎粥紫鸣
 
-![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/to_lmdb/test_width/00000.jpg)
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/to_lmdb/test_width/00001.jpg)
 
 Attention, to generate lmdb file for crnn training, chinese characters should be stored in UTF-8 format. Try to use NodePad++ to transform ANSI format to UTF-8 format
 
