@@ -1,6 +1,3 @@
----
-typora-root-url: ./
----
 
 # CRNN_Chinese_HandWriting_Text_Recognition
 
