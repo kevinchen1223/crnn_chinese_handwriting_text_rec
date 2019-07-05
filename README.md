@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 # CRNN_Chinese_HandWriting_Text_Recognition
 
 
@@ -11,7 +15,7 @@ This project is modified from https://github.com/Sierkinhane/crnn_chinese_charac
 
 
 
-Data Generatin
+## Data Generator
 
 The Training dataset is from, use following commands to download
 
@@ -34,6 +38,8 @@ run ``data_generator/chinese_text.py``
 
 Here are some samples.
 
+![](https://github.com/NormXU/Self-Driving-Dev/raw/master/Doc/demo2.gif)
+
 Attention, to generate lmdb file for crnn training, chinese characters should be stored in UTF-8 format. Try to use NodePad++ to transform ANSI format to UTF-8 format
 
 
@@ -48,7 +54,7 @@ python crnn_main.py
 
 
 
-
+## Results
 
 Training Loss:
 
