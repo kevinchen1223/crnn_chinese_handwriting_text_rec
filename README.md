@@ -32,15 +32,21 @@ In Ubuntu, run `unalz HWDB1.1trn_gnt.alz`
 
 run `data_generator/preProcessing.py` to extract all 3755 Chinese characters
 
+------
+
  To generate texts in Chinese, Randomly pick chars from dataset
 
 run ``data_generator/chinese_text.py``
 
+``data_generator/charDict.npy`` is the char dictionary
+
+------
+
 Here are some samples.
 
-in ``testUT.txt`` 
+in ``test_width.txt`` 
 
-00000.jpg 棒摄部籍鼓芥与敬红竣片
+00001.jpg 符疆葛去卑狂擅改汐堂苯谎粥紫鸣
 
 ![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/to_lmdb/test_width/00000.jpg)
 
