@@ -37,7 +37,7 @@ Here are some samples.
 
 in ``testUT.txt`` 
 
-00000.jpg 棒摄部籍鼓芥与敬红竣片
+00001.jpg 经匪蜒胃诀给谬罚嫂冒肺综
 
 ![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/to_lmdb/test_width/00000.jpg)
 
