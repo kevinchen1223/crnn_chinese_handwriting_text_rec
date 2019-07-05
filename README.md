@@ -38,7 +38,11 @@ run ``data_generator/chinese_text.py``
 
 Here are some samples.
 
-![](https://github.com/NormXU/Self-Driving-Dev/raw/master/Doc/demo2.gif)
+in ``testUT.txt`` 
+
+00000.jpg 棒摄部籍鼓芥与敬红竣片
+
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/to_lmdb/test_width/00000.jpg)
 
 Attention, to generate lmdb file for crnn training, chinese characters should be stored in UTF-8 format. Try to use NodePad++ to transform ANSI format to UTF-8 format
 
