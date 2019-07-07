@@ -67,7 +67,7 @@ The Training Set has 13, 000 chinese text images. The regression is really slow.
 
 Training Loss:
 
-
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/loss.png)
 
 Testing Accuracy:
 
