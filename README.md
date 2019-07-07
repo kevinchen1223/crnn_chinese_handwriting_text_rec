@@ -71,5 +71,15 @@ Training Loss:
 
 Testing Accuracy:
 
+#### Example 1
 
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/test1.jpg)
+
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/1.JPG)
+
+### Example 2
+
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/test2.jpg)
+
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/2.JPG)
 

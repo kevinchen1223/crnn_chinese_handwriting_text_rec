@@ -21,7 +21,7 @@ testing_Rate  = []
 
 def init_args():
     args = argparse.ArgumentParser()
-    args.add_argument('--trainroot', help='path to dataset', default='./to_lmdb/test_hand')
+    args.add_argument('--trainroot', help='path to dataset', default='./to_lmdb/train_hand')
     args.add_argument('--valroot', help='path to dataset', default='./to_lmdb/test_hand')
     args.add_argument('--cuda', action='store_true', help='enables cuda', default=False)
 

@@ -17,13 +17,13 @@ str1 = alphabets.chinese_3000
 
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('--images_path', type=str, default='test_images/test1.png', help='the path to your images')
+parser.add_argument('--images_path', type=str, default='test_images/test2.jpg', help='the path to your images')
 opt = parser.parse_args()
 
 
 # crnn params
 # 3p6m_third_ac97p8.pth
-crnn_model_path = 'trained_models/mixed_second_finetune_acc97p7.pth'
+crnn_model_path = 'trained_models/300_noAda_KeepRatio.pth'
 alphabet = str1
 nclass = len(alphabet)+1
 
