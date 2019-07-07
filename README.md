@@ -47,11 +47,11 @@ in ``test_width.txt``
 
 ![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/to_lmdb/test_width/00001.jpg)
 
-**Attention !** to generate lmdb file for crnn training, chinese characters should be stored in UTF-8 format. Try to use NodePad++ to transform ANSI format to UTF-8 format
+**Attention !** To generate lmdb file for crnn training, chinese characters should be stored in UTF-8 format. Try to use NodePad++ to transform ANSI format to UTF-8 format
 
 
 
-In ``alphabets.py``, there are two chinese character dictionaries. Switch between them if you found **IndexError**
+In ``alphabets.py``, there are two chinese character dictionaries. Switch between each other if you found **IndexError**
 
 For Training, 
 
@@ -62,6 +62,8 @@ python crnn_main.py
 
 
 ## Results
+
+The Training Set has 13, 000 chinese text images. The regression is really slow. It toke around 50 hours on RTX2080Ti
 
 Training Loss:
 

@@ -8,7 +8,7 @@ import torch.utils.data
 from torch.autograd import Variable
 import numpy as np
 import matplotlib.pyplot as plt
-# from warpctc_pytorch import CTCLoss
+from warpctc_pytorch import CTCLoss
 import os
 import utils
 import dataset
@@ -167,8 +167,8 @@ if __name__ == '__main__':
     nc = 1
 
     converter = utils.strLabelConverter(params.alphabet)
-    # criterion = CTCLoss()
-    criterion = torch.nn.CTCLoss()
+    criterion = CTCLoss()
+    #criterion = torch.nn.CTCLoss()
 
     # cnn and rnn
     image = torch.FloatTensor(params.batchSize, 3, params.imgH, params.imgH)

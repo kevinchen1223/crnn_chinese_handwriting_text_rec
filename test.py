@@ -13,7 +13,7 @@ import dataset
 from PIL import Image
 import models.crnn as crnn
 import alphabets
-str1 = alphabets.alphabet
+str1 = alphabets.chinese_3000
 
 import argparse
 parser = argparse.ArgumentParser()
