@@ -23,7 +23,7 @@ opt = parser.parse_args()
 
 # crnn params
 # 3p6m_third_ac97p8.pth
-crnn_model_path = 'trained_models/300_noAda_KeepRatio.pth'
+crnn_model_path = 'trained_models/crnn_Rec_done_299_650.pth'
 alphabet = str1
 nclass = len(alphabet)+1
 
