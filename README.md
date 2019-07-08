@@ -25,9 +25,9 @@ wget http://www.nlpr.ia.ac.cn/databases/download/feature_data/HWDB1.1tst_gnt.zip
 
 After Extract the files, you will find another compressed files in alz format. 
 
-In Ubuntu, run `unalz HWDB1.1trn_gnt.alz`
+In Ubuntu, run `unalz HWDB1.1trn_gnt.alz` and ``unalz HWDB1.1tst_gnt.alz``
 
-run `data_generator/preProcessing.py` to extract all 3755 Chinese characters
+run `data_generator/preProcessing.py` to extract all 3755 Chinese characters and generate ``charDict.npy`` which is the dictionary mapping folder name to Chinese Characters
 
 ------
 

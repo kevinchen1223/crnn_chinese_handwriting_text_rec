@@ -1,12 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul  3 21:01:07 2019
+
+@author: Nuo Xu
+"""
+
 import os
 import numpy as np
 import struct
 from PIL import Image
 
+#%%
 
-data_dir = '../data'
-train_data_dir = os.path.join(data_dir, 'HWDB1.1trn_gnt')
-test_data_dir = os.path.join(data_dir, 'HWDB1.1tst_gnt')
+train_data_dir = "../HWDB1.1trn_gnt"
+test_data_dir = "../HWDB1.1tst_gnt"
 
 
 def read_from_gnt_dir(gnt_dir=train_data_dir):
@@ -29,17 +36,23 @@ def read_from_gnt_dir(gnt_dir=train_data_dir):
             with open(file_path, 'rb') as f:
                 for image, tagcode in one_file(f):
                     yield image, tagcode
+
+
 char_set = set()
 for _, tagcode in read_from_gnt_dir(gnt_dir=train_data_dir):
-    tagcode_unicode = struct.pack('>H', tagcode).decode('gb2312')
+    tagcode_unicode = struct.pack('>H', tagcode).decode('gb2312')#.encode('utf-8')
     char_set.add(tagcode_unicode)
 char_list = list(char_set)
 char_dict = dict(zip(sorted(char_list), range(len(char_list))))
-print len(char_dict)
-import pickle
-f = open('char_dict', 'wb')
-pickle.dump(char_dict, f)
-f.close()
+print(len(char_dict))
+
+# %%
+np.save('charDict.npy', char_dict)
+
+# %%
+# read_dictionary = np.load('charDict.npy').item()
+
+## Generate All Char Folders under main folder
 train_counter = 0
 test_counter = 0
 for image, tagcode in read_from_gnt_dir(gnt_dir=train_data_dir):
