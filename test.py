@@ -1,6 +1,7 @@
 import numpy as np
 import sys, os
 import time
+import matplotlib.pyplot as plt
 
 sys.path.append(os.getcwd())
 
@@ -36,7 +37,9 @@ def crnn_recognition(cropped_image, model):
     image = cropped_image.convert('L')
 
     ## 
-    w = int(image.size[0] / (280 * 1.0 / 160))
+    w  = int(image.size[0] / (280 * 1.0 / 180))
+    # w = image.size[0]
+    # w = int(image.size[0] / (32 * 1.0 / image.size[1]))
     transformer = dataset.resizeNormalize((w, 32))
     image = transformer(image)
     if torch.cuda.is_available():
