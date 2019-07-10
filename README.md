@@ -54,7 +54,8 @@ in ``test_width.txt``
 In ``alphabets.py``, there are two chinese character dictionaries. Switch between each other if you found **IndexError**
 
 For Training, 
-
+Firstly, ``run tolmdb_py3.py`` to compress all data and labels in lmdb format, 
+then
 ```python
 python crnn_main.py
 ```
