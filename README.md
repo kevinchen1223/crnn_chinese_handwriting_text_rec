@@ -63,13 +63,13 @@ python crnn_main.py
 
 ## Results
 
-The Training Set has 13, 000 chinese text images. The regression is really slow. It toke around 50 hours on RTX2080Ti
+The Training Set has 200, 000 Chinese text images. The regression is really slow. It toke around 50 hours on RTX2080Ti
 
 Training Loss:
 
 ![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/loss.png)
 
-Testing Accuracy:
+#### Testing Accuracy:
 
 #### Example 1
 
@@ -83,3 +83,10 @@ Testing Accuracy:
 
 ![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/2.JPG)
 
+### Example 3
+
+In ``TestAll.py`` you can simply test the whole dataset with **Batch_Test_Flag = True**
+
+Test the Randomly Generated Dataset, the accuracy is around $$90\%$$
+
+![](https://github.com/NormXU/crnn_chinese_handwriting_text_rec/blob/master/test_images/Accuracy.JPG)
